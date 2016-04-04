@@ -34,6 +34,8 @@ tempdata = [60 60 800 1500 1400 1000 830  0    60   60];
 % (you need to have modified and run plottemp.m to create the file first.)
 % Uncomment the following line.
 load([pos '.mat'])
+timedata(end+1) = 4000;
+tempdata(end+1) = 0;
 %load('temp502.mat')
 
 % Initialise everything.

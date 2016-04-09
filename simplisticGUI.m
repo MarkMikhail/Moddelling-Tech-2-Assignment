@@ -16,28 +16,28 @@ while 1
     
     if y > 969 && y < 1116
         if x > 121 && x < 262
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp502', false);
+            tile = 'temp502';
         elseif x > 932 && x < 1087
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp590', false);
+            tile = 'temp590';
         elseif x > 2350 && x < 2482
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp468', false);
+            tile = 'temp468';
         end
         break
     elseif x > 1440 && x < 1597
         if y > 737 && y < 888
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp597', false);
+            tile = 'temp597';
         elseif y > 1165 && y < 1319
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp480', false);
+            tile = 'temp480';
         end
         break
     elseif y > 1703 && y < 1838 && x > 447 && x < 588
-        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp850', false);
+        tile = 'temp850';
         break
     elseif y > 1795 && y < 1950 && x > 588 && x < 738
-        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp711', false);
+        tile = 'temp711';
         break
     elseif y > 1940 && x > 472 && x < 622
-        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp730', false);
+        tile = 'temp730';
         break
     else
         waitfor(msgbox('Please click on a RED dot', 'Error','error'));
@@ -46,6 +46,8 @@ end
 pause(1)
 
 close(figure(4))
+
+[p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', tile, false);
 
 figure(1)
 surf(p, t, u);

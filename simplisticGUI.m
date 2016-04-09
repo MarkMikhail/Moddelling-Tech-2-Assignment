@@ -14,30 +14,30 @@ while 1
         'MarkerSize', 12, ...
         'MarkerFaceColor', 'b')
     
-    if y > 969 & y < 1116
-        if x > 121 & x < 262
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'forward', 'temp502', false);
-        elseif x > 932 & x < 1087
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'forward', 'temp590', false);
-        elseif x > 2350 & x < 2482
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'forward', 'temp468', false);
+    if y > 969 && y < 1116
+        if x > 121 && x < 262
+            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp502', false);
+        elseif x > 932 && x < 1087
+            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp590', false);
+        elseif x > 2350 && x < 2482
+            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp468', false);
         end
         break
-    elseif x > 1440 & x < 1597
-        if y > 737 & y < 888
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'forward', 'temp597', false);
-        elseif y > 1165 & y < 1319
-            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'forward', 'temp480', false);
+    elseif x > 1440 && x < 1597
+        if y > 737 && y < 888
+            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp597', false);
+        elseif y > 1165 && y < 1319
+            [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp480', false);
         end
         break
-    elseif y > 1703 & y < 1838 & x > 447 & x < 588
-        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'forward', 'temp850', false);
+    elseif y > 1703 && y < 1838 && x > 447 && x < 588
+        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp850', false);
         break
-    elseif y > 1795 & y < 1950 & x > 588 & x < 738
-        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'forward', 'temp711', false);
+    elseif y > 1795 && y < 1950 && x > 588 && x < 738
+        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp711', false);
         break
-    elseif y > 1940 & x > 472 & x < 622
-        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'forward', 'temp730', false);
+    elseif y > 1940 && x > 472 && x < 622
+        [p, t, u] = shuttle(4000, 501, 0.05, 21, 'crank-nick', 'temp730', false);
         break
     else
         waitfor(msgbox('Please click on a RED dot', 'Error','error'));
